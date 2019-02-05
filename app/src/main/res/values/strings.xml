@@ -1,0 +1,24 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Guess What</string>
+    <string name="category_title">Pilih Kategori</string>
+    <string name="fruits">Buah-buahan</string>
+    <string name="animal">Binatang</string>
+    <string name="your_chance">Kesempatanmu: </string>
+    <string name="static_question">Apa bahasa inggrisnya ini ?</string>
+    <string name="skip_this">Lewati</string>
+    <string name="tips">Tahan tombol dan ucapkan jawaban untuk menjawab</string>
+    <string name="try_again">Coba Lagi :(</string>
+    <string name="listening">Mendengarkan...</string>
+    <string name="surrender">Menyerah ?</string>
+    <string name="yes">Ya</string>
+    <string name="no">Tidak</string>
+    <string name="wrong">Jawaban Salah</string>
+    <string name="congratulation">Selamat !!</string>
+    <string name="wanna_exit">Apakah Kamu Yakin Mau Keluar ?</string>
+    <string name="final_result">kamu berhasil menjawab %1$d dari %2$d soal</string>
+
+    <string name="resources"><xliff:g>https://www.freepik.com/free-vector/fruits-stickers_785793.htm</xliff:g>\n\n<xliff:g>https://www.freepik.com/free-vector/yellow-sunburst-background-design_1118914.htm</xliff:g>\n\n<xliff:g>https://www.vecteezy.com</xliff:g>\n\n<xliff:g>https://www.playonloop.com/2018-music-loops/easy-peasy/</xliff:g></string>
+
+    <string name="about">Dibuat oleh: TryDev \nversi saat ini: 1.0\n\nJangan lupa untuk rate game kami di playstore :)\n\nJika kamu menemukan bug, tolong beritahu kami di trydev98@gmail.com</string>
+    <string name="instruction">Game ini ditujukan untuk belajar bahasa inggris dengan gambar dan ucapan.\n\nKamu akan dihadapkan dengan berbagai gambar, kemudian kamu harus mengucapkan bahasa inggris dari gambar yang muncul. untuk menjawabnya, kamu perlu menekan tombol dengan gambar mic yang tersedia, kemudian ucapkan dengan keras dan benar jawabannya.</string>
+</resources>

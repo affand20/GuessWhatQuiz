@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.trydev.games.guesswhat.CategoryActivity"
+    android:background="@drawable/background"
+    android:padding="16dp"
+    >
+    <TextView
+        android:text="@string/category_title"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        android:textColor="@color/gradient_bottom"
+        android:shadowColor="@color/outline_color"
+        android:shadowRadius="2"
+        android:shadowDy="10"
+        android:shadowDx="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/fruit"
+                android:src="@drawable/cherry_correct"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                android:adjustViewBounds="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:textSize="24sp"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:shadowRadius="1"
+                android:shadowDx="5"
+                android:shadowDy="5"
+                android:shadowColor="@color/shadow_color"
+                android:text="@string/fruits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:id="@+id/animal"
+                android:src="@drawable/cow"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                android:adjustViewBounds="true"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:textSize="24sp"
+                android:textAlignment="center"
+                android:text="@string/animal"
+                android:shadowColor="@color/shadow_color"
+                android:shadowDy="5"
+                android:shadowDx="5"
+                android:shadowRadius="1"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

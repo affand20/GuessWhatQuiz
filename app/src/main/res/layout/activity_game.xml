@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.trydev.games.guesswhat.GameActivity"
+    android:background="@drawable/background"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    >
+
+    <TextView
+        android:id="@+id/your_chance"
+        android:text="@string/your_chance"
+        android:textColor="@color/outline_color"
+        android:shadowColor="@color/shadow_color"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="1"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        tools:text="30"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/outline_color"
+        android:shadowColor="@color/shadow_color"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="1"
+        android:id="@+id/chance_left"
+        android:textSize="16sp"
+        android:layout_toEndOf="@id/your_chance"
+        android:layout_toRightOf="@id/your_chance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_below="@id/chance_left"
+        android:layout_marginTop="16dp"
+        android:text="@string/static_question"
+        android:textSize="35sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/static_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/gradient_bottom"
+        android:shadowRadius="2"
+        android:shadowDy="5"
+        android:layout_marginTop="10dp"
+        android:shadowDx="7"
+        android:shadowColor="@color/shadow_color"
+        android:textSize="18sp"
+        android:layout_below="@id/static_question"
+        android:text="@string/skip_this"
+        android:background="@android:color/transparent"
+        android:id="@+id/skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_marginBottom="36dp"
+        android:layout_centerInParent="true"
+        android:layout_above="@id/answer_button"
+        android:id="@+id/quest_image"
+        android:src="@drawable/banana_correct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxHeight="250dp"
+        android:maxWidth="250dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        />
+    <ImageButton
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/answer_button_stated"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:maxWidth="170dp"
+        android:maxHeight="170dp"
+        android:id="@+id/answer_button"
+        android:layout_above="@id/tips"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tips"
+        android:textColor="@android:color/white"
+        android:shadowColor="@color/shadow_color"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="2"
+        android:textAlignment="center"
+        android:text="@string/tips"
+        android:textSize="25sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

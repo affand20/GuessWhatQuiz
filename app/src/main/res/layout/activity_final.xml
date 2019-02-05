@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.trydev.games.guesswhat.FinalActivity"
+    android:background="@drawable/background_score"
+    android:padding="16dp"
+    >
+
+    <TextView
+        android:id="@+id/congrats"
+        android:textColor="@color/gradient_bottom"
+        android:shadowRadius="1"
+        android:shadowDx="10"
+        android:shadowDy="10"
+        android:shadowColor="@color/shadow_color"
+        android:textSize="45sp"
+        android:text="@string/congratulation"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/final_result"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/congrats"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:shadowColor="@color/shadow_color"
+        android:shadowRadius="1"
+        android:shadowDy="5"
+        android:shadowDx="5"
+        android:textSize="23sp"
+        tools:text=""
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/image_medal"
+        android:layout_centerInParent="true"
+        android:src="@drawable/medal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:maxWidth="250dp"
+        android:maxHeight="250dp"
+        />
+
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/image_medal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/menu"
+            style="@style/last_button"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/menu_button"
+            />
+        <ImageButton
+            android:id="@+id/home_button"
+            style="@style/last_button"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/home_button"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
